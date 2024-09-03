@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+#navbar {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+#navbar link {
+  color: white;           /* Link text color */
+  text-align: center;     /* Center the text */
+  flex: 1;
+}
+
+/* Styling for the container that holds the player cards. */
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Styling for individual player cards. */
+.player-card {
+ width: 360px; /* The width of the card. */
+ height: fit-content; /* The height of the card. */
+ margin: 10px; /* The margin around the card. */
+  background-color: lightskyblue;
+  border-style: solid;
+  /* The radius of the card's corners. */
+  border-radius: 5px;
+  /* The shadow effect around the card. */
+  box-shadow: 1px 1px;
+ overflow: hidden; /* Any content that goes outside the card will be hidden. */
+ position: relative; /* The card's position is set to relative so it can be moved using the transform property. */
+ transition: transform 0.3s; /* Transition effect for the transform property. */
+}
+
+/* Styling for when a user hovers over a player card. */
+.player-card:hover {
+ margin-top: -1px;
+}
+
+/* Styling for the container that holds the player's image. */
+.player-image-container {
+/* The image is centered. */
+margin: auto;
+justify-content: center;
+align-items: center;
+/* The image is centered along the horizontal axis. */
+ /* The image is centered along the vertical axis. */
+ height: 300px; /* The height of the image container. */
+ max-height: 50%;
+ max-width: auto;
+ padding: 10px; /* The padding around the image. */
+}
+
+img {
+ width: auto; /* The width of the image. */
+ height: 250px; /* The height of the image. */
+ max-width: 100%;
+ max-height: 100%;
+ /* The image will cover the entire area of its container without distorting its aspect ratio. */
+ /* The image is displayed using CSS Grid. */
+/* The margin to the left of the image. */
+}
+
+/* Styling for the player's image. */
+.player-image {
+ width: 250px; /* The width of the image. */
+ height: 250px; /* The height of the image. */
+ max-width: 100%;
+ max-height: 100%;
+ /* The image will cover the entire area of its container without distorting its aspect ratio. */
+ /* The image is displayed using CSS Grid. */
+/* The margin to the left of the image. */
+}
+
+/* Styling for the player's details (name, breed, status). */
+.player-details {
+ flex-direction: column; /* The details are arranged in a column. */
+ align-items: center; /* The details are centered along the vertical axis. */
+ justify-content: center; /* The details are centered along the horizontal axis. */
+ color: #000; /* The color of the details text. */
+ font-size: 16px; /* The size of the details text. */
+ text-align: center; /* The details text is centered. */
+}
